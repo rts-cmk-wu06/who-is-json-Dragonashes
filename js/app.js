@@ -42,17 +42,17 @@ for (var i = 0; i < persondata2.personer.length; i++) {
             '<dd>' + persondata2.personer[i].efternavn + '</dd>' +
             '<dd>' + persondata2.personer[i].alder + '</dd>' +
             '<dd>' + persondata2.personer[i].hårfarve + '</dd>' +
-            '<dd>' + persondata2.personer[i].religion + '</dd>' + '<br>';
+            '<dd>' + persondata2.personer[i].religion + '</dd>' + '<br>'
     } else {
         info +=
             '<dd>' + persondata2.personer[i].fornavn + '</dd>' +
             '<dd>' + persondata2.personer[i].efternavn + '</dd>' +
             '<dd>' + persondata2.personer[i].alder + '</dd>' +
             '<dd>' + persondata2.personer[i].hårfarve + '</dd>' +
-            '<dd>' + persondata2.personer[i].religion + '</dd>' + '<br>';
+            '<dd>' + persondata2.personer[i].religion + '</dd>' + '<br>'
     }
 }
-// para.textContent = info;
+// textContent
 para.innerHTML = info;
 
 // this shouldent work
@@ -69,11 +69,9 @@ para.innerHTML = info;
 fetch("./js/testdata2.json")
 .then((response) => response.json())
 // .then((data) => console.log(data))
-.then((data) => { console.log(data) })
-// .then((data) => {
-//     // let listitem = document.createElement("li");
-//     // listitem.textContent =
-//     data.testdata2.array.forEach(element => {
-//         document.createElement("li");
-//     });
-// })
+.then((data) => {
+    console.log(data)
+    console.log(data.personer)
+    console.log(data.personer[0])
+    console.log(data.personer[0].fornavn)
+})
