@@ -56,14 +56,24 @@ for (var i = 0; i < persondata2.personer.length; i++) {
 para.innerHTML = info;
 
 // this shouldent work
-var mydata = JSON.parse(data);
-console.log(mydata[0].name);
-console.log(mydata[0].age);
-console.log(mydata[1].name);
-console.log(mydata[1].age);
+// var mydata = JSON.parse(data);
+// console.log(mydata[0].name);
+// console.log(mydata[0].age);
+// console.log(mydata[1].name);
+// console.log(mydata[1].age);
 
 
-// use liveserver
-fetch("./testdata2.json")
-    .then((response) => response.json())
-    .then((response) => console.log(response.json()))
+
+
+    // works with liveserver
+fetch("./js/testdata2.json")
+.then((response) => response.json())
+// .then((data) => console.log(data))
+.then((data) => { console.log(data) })
+// .then((data) => {
+//     // let listitem = document.createElement("li");
+//     // listitem.textContent =
+//     data.testdata2.array.forEach(element => {
+//         document.createElement("li");
+//     });
+// })
