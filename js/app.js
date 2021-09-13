@@ -54,14 +54,3 @@ for (var i = 0; i < persondata2.personer.length; i++) {
 }
 // textContent
 para.innerHTML = info;
-
-// works with liveserver
-fetch("./js/testdata2.json")
-.then((response) => response.json())
-// .then((data) => console.log(data))
-.then((data) => {
-    console.log(data)
-    console.log(data.personer)
-    console.log(data.personer[0])
-    console.log(data.personer[0].fornavn)
-})
