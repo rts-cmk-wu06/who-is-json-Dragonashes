@@ -55,17 +55,7 @@ for (var i = 0; i < persondata2.personer.length; i++) {
 // textContent
 para.innerHTML = info;
 
-// this shouldent work
-// var mydata = JSON.parse(data);
-// console.log(mydata[0].name);
-// console.log(mydata[0].age);
-// console.log(mydata[1].name);
-// console.log(mydata[1].age);
-
-
-
-
-    // works with liveserver
+// works with liveserver
 fetch("./js/testdata2.json")
 .then((response) => response.json())
 // .then((data) => console.log(data))
